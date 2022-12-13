@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 // import { Header, Social, Email, Footer } from '@components';
-import { LayoutContainer } from '../styles';
 import Header from './Header';
 
 const Layout = ({ children, location }: any) => {
@@ -15,7 +14,6 @@ const Layout = ({ children, location }: any) => {
   }, [isLoading]);
 
   return (
-    <LayoutContainer>
 
       <div className="layout">
         <Header />
@@ -28,7 +26,6 @@ const Layout = ({ children, location }: any) => {
         </main>
       </div>
 
-    </LayoutContainer>
 
   )
 
