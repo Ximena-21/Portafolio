@@ -3,8 +3,10 @@
     --color-main:#f0f0f0;
     --color-main-light:#1f252b;
     --color-main-shadow:#131518b4;
-    --color-second:#34da76;
-    --color-second-light:#73d59a;
+    --color-second:#439A97;
+    // --color-second:#34da76;
+    --color-second-light:#3b9b97;
+    // --color-second-light:#73d59a;
     --color-third: #837210;
   
     --color-letter: #292929;
@@ -19,12 +21,14 @@
   
   
   :root[data-color-theme=dark]{
-    --color-main-dark:#16191c; 
+    --color-main-dark:#16191c;
     --color-main:#16191c;
     --color-main-light:#1f252b;
     --color-main-shadow:#131518b4;
-    --color-second:#34da76;
-    --color-second-light:#73d59a;
+    --color-second:#439A97;
+    // --color-second:#34da76;
+    --color-second-light:#3b9b97;
+    // --color-second-light:#73d59a;
     --color-third: #837210;
   
     --color-letter: #c7d0da;

@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
-// import { navLinks } from '@config';
-// import { IconLogo } from '@components/icons';
-// import { Menu } from '@components'
+import { navLinks } from '@config';
+// import Image from 'next/image';
+import { IconLogo } from '@components/icons/index'
+
+// import Menu from './Menu';
 // import '../styles/components/header.scss';
 
 const Header = () => {
@@ -17,17 +19,18 @@ const Header = () => {
     <div className="header">
 
       <Link href='/'>
-        {/* <IconLogo /> */}
+        {/* <Image src={IconLogo} alt="Paula"/> */}
+        <IconLogo />
       </Link>
 
       <nav className='styledLinks'>
         <ol>
-          {/* {navLinks &&
+          {navLinks &&
             navLinks.map(({ url, name }, i) => (
               <li key={i}>
-                <Link to={url}>{name}</Link>
+                <Link href={url}>{name}</Link>
               </li>
-            ))} */}
+            ))}
         </ol>
         <div>{ResumeLink}</div>
       </nav>

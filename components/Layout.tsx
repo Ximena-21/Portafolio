@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-// import { Header, Social, Email, Footer } from '@components';
-import Header from './Header';
+
+import { Header, Social, Email, Footer} from '@components/index';
 
 const Layout = ({ children, location }: any) => {
   const isHome = location.pathname === '/';
@@ -17,12 +17,12 @@ const Layout = ({ children, location }: any) => {
 
       <div className="layout">
         <Header />
-        {/* <Social />
-        <Email /> */}
+        <Social />
+        <Email />
 
         <main id='content' className='fillHeight'>
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </main>
       </div>
 
