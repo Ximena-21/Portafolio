@@ -3,8 +3,7 @@ import React from 'react';
 import { navLinks } from '@config';
 // import Image from 'next/image';
 import { IconLogo } from '@components/icons/index'
-
-// import Menu from './Menu';
+import { Menu } from '@components/index'
 // import '../styles/components/header.scss';
 
 const Header = () => {
@@ -35,7 +34,7 @@ const Header = () => {
         <div>{ResumeLink}</div>
       </nav>
 
-      {/* <Menu /> */}
+      <Menu />
 
     </div>
 

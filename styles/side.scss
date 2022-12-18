@@ -1,0 +1,34 @@
+@import "./vars.scss";
+
+.side {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  color: var(--color-letter-light);
+  left: auto;
+  right: 40px;
+
+  &.left {
+    left: 40px;
+    right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .side {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .side {
+    left: auto;
+    right: 20px;
+
+    &.left {
+      left: 20px;
+      right: auto;
+    }
+  }
+}
