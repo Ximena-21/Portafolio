@@ -7,6 +7,7 @@ export default function Hero() {
       <h1>Hola, mi nombre es </h1>
       <h2 className="big-heading">Ximena Anzola</h2>
       <h3 className="big-heading">Front-End Developer</h3>
+      
       <p>
         Soy Ingeniera Ambiental y Desarrolladora Frontend, me apasiona la construccion de proyectos basados en soluciones optimas. Fiel creyente que la planeación es el primer paso del éxito.
       </p>
