@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: test-repo
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "public/uploads" # Where media files will be stored
@@ -11,7 +11,7 @@ collections:
     label: "Projects" # Used in the UI
     folder: "content/projects" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}-name" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false
     fields:
@@ -26,3 +26,35 @@ collections:
         name: "tecnologies"
         widget: "list"
         field: { label: "Tecnology", name: "tecnology", widget: "string" }
+  - name: "jobs"
+    label: "Jobs"
+    folder: "content/job"
+    create: true
+    media_folder: "assets"
+    public_folder: "assets"
+    path: "{{company}}/{{title}}/index"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+
+      - label: "Fechas de la experiencia"
+        name: "dateRange"
+        widget: "object"
+        fields:
+          - { label: "Fecha de Inicio", name: "init", widget: "datetime" }
+          - {
+              label: "Fecha de Finalización",
+              name: "finish",
+              default: "",
+              widget: "datetime",
+              required: false,
+            }
+
+      - { label: "Url", name: "url", widget: "string" }
+      - label: "Activities"
+        name: "activities"
+        widget: "list"
+        fields:
+          - { label: "Activity", name: "activity", widget: "string" }
