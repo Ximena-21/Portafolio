@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: github
   branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "public/uploads" # Where media files will be stored
