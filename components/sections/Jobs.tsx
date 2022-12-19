@@ -60,7 +60,7 @@ export default function Jobs({ data }: any) {
               <div className='activities'>
                 <ul>
                   {activatedJob.activities &&
-                    activatedJob.activities.map((act, i) => {
+                    activatedJob.activities.map((act:any, i:number) => {
                       return (
                         <li key={i}>{act.activity}</li>
                       )
