@@ -1,0 +1,72 @@
+@import "./vars.scss";
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin link {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: $transition;
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-second);
+    outline: 0;
+  }
+}
+
+@mixin inlineLink {
+
+  color: var(--color-second);
+
+}
+
+@mixin smallButton {
+  padding: 0.75rem 1rem;
+}
+
+@mixin boxShadow {
+  box-shadow: 0 10px 30px -15px var(--color-main-shadow);
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 20px 30px -15px var(--color-main-shadow);
+  }
+}
+
+@mixin fancyList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: $fz-lg;
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    &:before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--color-second);
+    }
+  }
+}
+
+@mixin resetList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
