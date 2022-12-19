@@ -5,6 +5,21 @@ const nextConfig = {
   compiler: {
     styledComponents: true
   },
+  // webpack: function(config) {
+  //   config.module.rules.push({
+  //     test: /\.md$/,
+  //     use: 'raw-loader',
+  //   })
+  //   return config
+  // },
+  webpack: (cfg) => {
+    cfg.module.rules.push({
+      test: /\.md$/,
+      use: 'frontmatter-markdown-loader',
+      // options: { mode: ['react-component'] }
+    })
+    return cfg
+  }
   //agrege esto por problema con svg
   // images: {
   //   dangerouslyAllowSVG: true,

@@ -1,0 +1,155 @@
+@import "../vars.scss";
+@import "../mixins.scss";
+
+.jobs {
+  max-width: 700px;
+  // background: white;
+
+  .inner {
+    display: flex;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
+    // Prevent container from jumping
+    @media (min-width: 700px) {
+      min-height: 340px;
+    }
+
+    .tabList {
+      position: relative;
+      z-index: 3;
+      width: max-content;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      &::-webkit-scrollbar {
+        height: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: var(--color-main);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--color-letter-dark);
+        border: 3px solid var(--color-main);
+        border-radius: 10px;
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
+        overflow-x: auto;
+        width:100%;
+        margin-bottom: 30px;
+      }
+
+      li {
+        &:first-of-type {
+          @media (max-width: 600px) {
+            margin-left: 50px;
+          }
+          @media (max-width: 480px) {
+            margin-left: 25px;
+          }
+        }
+        &:last-of-type {
+          @media (max-width: 600px) {
+            padding-right: 50px;
+          }
+          @media (max-width: 480px) {
+            padding-right: 25px;
+          }
+        }
+      }
+
+      .tabButton {
+        @include link;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: $tab-height;
+        padding: 0 20px 2px;
+        border-left: 2px solid var(--color-third);
+        background-color: transparent;
+        font-family: $font-mono;
+        font-size: $fz-xs;
+        text-align: left;
+        white-space: nowrap;
+        color: var(--color-letter);
+        min-width: min-content;
+
+        &.active {
+          color: var(--color-second);
+          border-bottom: 2px solid var(--color-second);
+
+          @media (min-width:600px){
+            border-bottom: 0;
+            border-left: 2px solid var(--color-second);
+          }
+        }
+
+        @media (max-width: 768px) {
+          padding: 0 15px 2px;
+        }
+
+        @media (max-width: 600px) {
+          @include flexCenter;
+          padding: 0 15px;
+          border-left: 0;
+          border-bottom: 2px solid var(--color-third);
+          text-align: center;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: var(--color-main-light);
+        }
+      }
+    }
+
+    .tabPanels {
+      position: relative;
+      width: 100%;
+      margin-left: 20px;
+
+      @media (max-width: 600px) {
+        margin-left: 0;
+      }
+
+      .tabPanel {
+        width: 100%;
+        height: auto;
+        padding: 10px 5px;
+
+        ul {
+          @include fancyList;
+        }
+
+        h3 {
+          margin-bottom: 2px;
+          font-size: $fz-xxl;
+          font-weight: 500;
+          line-height: 1.3;
+
+          .company {
+            color: var(--color-second);
+          }
+        }
+
+        .range {
+          margin-bottom: 25px;
+          color: var(--color-letter-light);
+          font-family: $font-mono;
+          font-size: $fz-xs;
+        }
+
+        .activities {
+          ul {
+            @include fancyList;
+          }
+        }
+      }
+    }
+  }
+}
