@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Hero, Layout, About, Jobs } from '@components/index'
+import { Hero, Layout, About, Jobs, Projects } from '@components/index'
 import { readFileSync, readdirSync } from "fs"
 // import glob from "glob";
 import matter from 'gray-matter'
@@ -27,6 +27,7 @@ export default function Home(props: any) {
         <Hero />
         <About />
         <Jobs data={props.jobs || []} />
+        <Projects data={props.projects || []} />
         {/* <About />
       <Jobs />
       <Projects />
@@ -61,10 +62,38 @@ export async function getStaticProps({ ...ctx }) {
   
   }).flat(2)
 
+  const folderProjects = readdirSync("content/projects")
+  console.log('proyectos', folderProjects);
+  
+
+  const projects = folderProjects.map(project => {
+
+    const projectData = require(`content/projects/${project}`)    
+
+  console.log('data proyectos',projectData);
+  
+  //   //[]
+    // const arrayProjects = require(`content/projects/${project}`)
+    // console.log('cada proyecto', arrayProjects);
+    
+  //   //[objectData,objectData]
+  //   const readedProjects = arrayProjects.map( file => {
+
+  //     const projectData = require(`content/projects/${company}/${project}/index.md`)
+
+      return projectData.attributes
+
+    })
+
+  //   return readedProjects
+  
+  // }).flat(2)
+
 
   return {
     props: {
-      jobs
+      jobs,
+      projects,
     }
   }
 }
