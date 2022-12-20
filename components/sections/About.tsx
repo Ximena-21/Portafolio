@@ -1,4 +1,7 @@
 import React, { useRef } from "react";
+import Image from 'next/image'
+// import photo from '../../components/images/photo.jpeg'
+import photo from '../../components/images/photo1.jpg'
 // import { StaticImage } from "gatsby-plugin-image";
 
 export default function About() {
@@ -63,6 +66,7 @@ export default function About() {
 
         <div className="styledPic">
           <div className="wrapper">
+            <Image src={photo} alt='Headshot' className="img" width={300} height={400}/>
             {/* <StaticImage
               className="img"
               src="../../images/me.jpg"
