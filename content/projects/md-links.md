@@ -1,7 +1,7 @@
 ---
 title: MdLinks
 description: Construir una pequeña libreria con nodeJs
-image: /uploads/download.jpeg
+image: /uploads/mdlinks.png
 github: https://github.com/Ximena-21
 external: algo que aun noo se
 mockup: otroAlgo

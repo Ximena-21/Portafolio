@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Hero, Layout, About, Jobs, Projects } from '@components/index'
+import { Hero, Layout, About, Jobs, Projects, Contact } from '@components/index'
 import { readFileSync, readdirSync } from "fs"
 // import glob from "glob";
 import matter from 'gray-matter'
@@ -28,10 +28,7 @@ export default function Home(props: any) {
         <About />
         <Jobs data={props.jobs || []} />
         <Projects data={props.projects || []} />
-        {/* <About />
-      <Jobs />
-      <Projects />
-      <Contact /> */}
+        <Contact /> 
       </Layout>
     </>
   )
