@@ -6,7 +6,7 @@ import { Icon } from '@components/icons';
 export default function Projects({ data }: any) {
 
     const revealTitle = useRef(null);
-    const revealProjects : any = useRef([]);
+    const revealProjects = useRef([]);
 
 
     return (
@@ -28,7 +28,7 @@ export default function Projects({ data }: any) {
                                         <p className="project-overline">Featured Project</p>
 
                                         <h3 className="project-title">
-                                            <a href={external} target='_blank' rel='noreferrer' >{title}</a>
+                                            <a href={external} target='_blank' rel='noreferr' >{title}</a>
                                         </h3>
 
                                         <div className="project-description" dangerouslySetInnerHTML={{ __html: description }}></div>
@@ -43,19 +43,19 @@ export default function Projects({ data }: any) {
 
                                         <div className="project-links">
                                             {github && (
-                                                <a href={github} rel='noreferrer' target='_blank' aria-label="GitHub Link">
+                                                <a href={github} rel='noreferr' target='_blank' aria-label="GitHub Link">
                                                     <Icon name="GitHub" />
                                                 </a>
                                             )}
                                             {
                                                 mockup && (
-                                                    <a href={mockup} rel='noreferrer' target='_blank' aria-label="Mockup Link">
+                                                    <a href={mockup} rel='noreferr' target='_blank' aria-label="Mockup Link">
                                                         <Icon name="Figma" />
                                                     </a>
                                                 )
                                             }
                                             {external && (
-                                                <a href={external} rel='noreferrer' target='_blank' aria-label="External Link" className="external">
+                                                <a href={external} rel='noreferr' target='_blank' aria-label="External Link" className="external">
                                                     <Icon name="External" />
                                                 </a>
                                             )}
