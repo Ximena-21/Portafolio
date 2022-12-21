@@ -1,0 +1,172 @@
+@import "./vars.scss";
+@import "./mixins";
+
+.styledMenu {
+  display: none;
+
+  .hamburguerButton {
+    display: none;
+    cursor: pointer;
+
+    .ham-box {
+      display: inline-block;
+      position: relative;
+      width: $hamburger-width;
+      height: 24px;
+    }
+
+    .ham-box-inner {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: $hamburger-width;
+      height: 2px;
+      border-radius: $border-radius;
+      background-color: var(--color-second);
+      transition-duration: 0.22s;
+      transition-property: transform;
+      // transition-delay: 0sg;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+      &.open {
+        transition-delay: 0.12s;
+        transform: rotate(225deg);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &:before {
+          width: 100%;
+          top: 0;
+          opacity: 0;
+          transition: $ham-before-active;
+        }
+
+        &:after {
+          width: 100%;
+          bottom: 0px;
+          transform: rotate(-90deg);
+          transition: $ham-after-active;
+        }
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: auto;
+        right: 0;
+        width: $hamburger-width;
+        height: 2px;
+        border-radius: 4px;
+        background-color: var(--color-second);
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transition-property: transform;
+      }
+
+      &:before {
+        width: 120%;
+        top: -10px;
+        opacity: 1;
+        transition: $ham-before;
+      }
+
+      &:after {
+        width: 80%;
+        bottom: -10px;
+        transform: rotate(0);
+        transition: $ham-after;
+      }
+    }
+
+    @media (max-width: 768px) {
+      @include flexCenter;
+      position: relative;
+      margin-right: -15px;
+      padding: 15px;
+      background-color: transparent;
+      transition-timing-function: linear;
+      transition-duration: 0.15s;
+      transition-property: opacity, filter;
+      z-index: 10;
+    }
+  }
+
+  .sidebar {
+    display: none;
+
+    &.open {
+      transform: translateX(0vw);
+      visibility: visible;
+      display: flex;
+    }
+
+    nav {
+      @include flexBetween;
+      width: 100%;
+      flex-direction: column;
+      color: var(--color-letter-lightest);
+      text-align: center;
+    }
+
+    ol {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%;
+
+      li {
+        position: relative;
+        margin: 0 auto 20px;
+        counter-increment: item 1;
+        font-size: clamp($fz-sm, 4vw, $fz-lg);
+        @media (max-width: 600px) {
+          margin: 0 auto 10px;
+        }
+
+        &:before {
+          content: "0" counter(item) ".";
+          display: block;
+          margin-bottom: 5px;
+          color: var(--color-second);
+          font-size: $fz-sm;
+        }
+      }
+
+      a {
+        @include link;
+        width: 100%;
+        padding: 3px 20px 20px;
+      }
+    }
+
+    .button {
+      padding: 18px 50px;
+      margin: 10% auto 0;
+      width: max-content;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .styledMenu {
+    display: block;
+    .sidebar {
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 50px 10px;
+      width: min(75vw, 400px);
+      height: 100vh;
+      outline: 0;
+      background-color: var(--color-main-light);
+      box-shadow: -10px 0px 30px -15px var(--color-main-shadow);
+      transition: $transition;
+      transform: translateX(100vw);
+      visibility: hidden;
+    }
+  }
+}
