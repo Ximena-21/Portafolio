@@ -6,7 +6,7 @@ import { Icon } from '@components/icons';
 export default function Projects({ data }: any) {
 
     const revealTitle = useRef(null);
-    const revealProjects:any = useRef([]);
+    const revealProjects : any = useRef([]);
 
 
     return (
@@ -68,7 +68,7 @@ export default function Projects({ data }: any) {
 
 
                                 <div className="project-image">
-                                    <a className='notHover' target='_blank' href={external ? external : github ? github : ""}>
+                                    <a className='notHover' target='_blank' rel='noreferrer' href={external ? external : github ? github : ""}>
                                         <Image src={image} alt={title} className="img" width={500} height={380} />
                                     </a>
                                 </div>
