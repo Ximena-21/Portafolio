@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Image from 'next/image'
-// import photo from '../../components/images/photo.jpeg'
-import photo from '../../components/images/photo1.jpg'
+import photo from '../../components/images/photo.jpeg'
+// import photo from '../../components/images/photo1.jpg'
 // import { StaticImage } from "gatsby-plugin-image";
 
 export default function About() {
@@ -9,11 +9,11 @@ export default function About() {
   const skills = [
     "JavaScript (ES6+)",
     "React",
-    "Python",
-    "Vba/Vb.net",
+    "TypeScript",
+    "NextJs",
     "Node.js",
     "firebase",
-    "mongo",
+    "Sass",
   ];
 
   return (
@@ -24,34 +24,26 @@ export default function About() {
         <div className="styledText">
           <div>
             <p>
-              Hola! Mi nombre es Juan Camilo Ibáñez, soy Ingeniero Industrial de
-              la Universidad Antonio Nariño y Desarrollador de software. Inicie
-              en el área de la programación en el año 2018, gracias a mi interés
-              constante por automatizar y mejorar los procesos.
+              Hola! Mi nombre es Ximena Anzola, soy Ingeniera Ambiental de
+              la Universidad Santo Tomas y Desarrolladora Frontend.
             </p>
 
             <p>
-              Me gusta afrontar nuevos retos, es por eso que enfoque mi proyecto
-              de grado en el área de modelos matematicos con el fin de generar un modelo
-              de gestión de rutas basado en el problema VRP para la optimización
-              del sistema de recolección de RSU, a partir de allí inicié a
-              desarrollar software que me permitiera automatizar y optimizar la
-              mayoría de procesos en los que estuviera a cargo, además de darme
-              el impulso para fundar mi primer emprendimiento llamado{" "}
-              <a
-                href="https://www.instagram.com/5eonn/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                5EON.
-              </a>
+              Inicie en el mundo de la programación en el año 2021, apoyando
+              (.....).
+              Esto, desperto mi interes en este nuevo mundo, e inicie mi formacion
+              autonoma con diferentes cursos en platzi y busqueda en la web. Busqueda
+              que me llevo a postular y posteriormente a ingresar a Laboratoria, alli
+              curse el programa intensivo de 6 meses para Front-end Developer, enfocado
+              al desarrollo de habilidades técnicas y socioemocionales, en la simulación
+              de un ambiente laboral basado en el desarrollo de proyectos y trabajo colaborativo.
             </p>
 
             <p>
-              Estas experiencias me han otorgado multidisciplinaria y
-              flexibilidad, manteniendo mi enfoque principal, seguir creando
-              productos rápidos, accesibles y con una excelente experiencia
-              digital.
+              Mi propósito es contribuir de manera activa con acciones que permitan mejorar
+              la calidad de vida de las personas; mediante la mejora continua de mis practicas,
+              logrando productos optimizados, accecisbles, con excelente experiencia, que logre
+              unir usuarios a kilometros con un solo click.
             </p>
 
             <p>
@@ -66,7 +58,7 @@ export default function About() {
 
         <div className="styledPic">
           <div className="wrapper">
-            <Image src={photo} alt='Headshot' className="img" width={300} height={400}/>
+            <Image src={photo} alt='Headshot' className="img" width={300} height={400} />
             {/* <StaticImage
               className="img"
               src="../../images/me.jpg"
