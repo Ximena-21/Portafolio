@@ -28,7 +28,7 @@ export default function Home(props: any) {
         <About />
         <Jobs data={props.jobs || []} />
         <Projects data={props.projects || []} />
-        <Contact /> 
+        <Contact />
       </Layout>
     </>
   )
@@ -40,7 +40,7 @@ export async function getStaticProps({ ...ctx }) {
   //leer una archivo
 
   const folders = readdirSync("content/job/")
-  
+
   const jobs = folders.map(company => {
 
     //[]
@@ -56,35 +56,21 @@ export async function getStaticProps({ ...ctx }) {
     })
 
     return readedJobs
-  
+
   }).flat(2)
+
+
 
   const folderProjects = readdirSync("content/projects")
   console.log('proyectos', folderProjects);
-  
+
 
   const projects = folderProjects.map(project => {
 
-    const projectData = require(`content/projects/${project}`)    
-
-  console.log('data proyectos',projectData);
-  
-  //   //[]
-    // const arrayProjects = require(`content/projects/${project}`)
-    // console.log('cada proyecto', arrayProjects);
-    
-  //   //[objectData,objectData]
-  //   const readedProjects = arrayProjects.map( file => {
-
-  //     const projectData = require(`content/projects/${company}/${project}/index.md`)
-
+    const projectData = require(`content/projects/${project}`)
       return projectData.attributes
 
     })
-
-  //   return readedProjects
-  
-  // }).flat(2)
 
 
   return {

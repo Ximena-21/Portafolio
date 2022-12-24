@@ -13,6 +13,7 @@ const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 //   useOnClickOutside(wrapperRef, () => setMenuOpen(false))
+  // const classNull : any  = null
 
   const onResize = (e : any) => {
     if (e.currentTarget.innerWidth > 768) {
@@ -32,15 +33,9 @@ const Menu = () => {
     <div className="styledMenu">
     {/* <div ref={wrapperRef} className="styledMenu"> */}
 
-      {/* <Helmet> */}
-        {/* {
-          menuOpen ?
-          <body className='blur'></body>
-          : <body className=""></body>
-        } */}
-        {/* <body className={menuOpen ? 'blur' : ''}></body> */}
-        {/* <body className={menuOpen ? 'blur' : null}></body> */}
-    {/* </Helmet> */}
+      {/* <Helmet>
+        <body className={`${menuOpen ? 'blur' : ""}`}></body>
+    </Helmet> */}
 
       <div
         className='hamburguerButton'

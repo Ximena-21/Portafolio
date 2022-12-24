@@ -1,7 +1,6 @@
 import React from 'react';
 import { Side } from '@components/index'
 import { email } from '@config';
-// import '../styles/components/email.scss'
 
 
 export default function Email() {

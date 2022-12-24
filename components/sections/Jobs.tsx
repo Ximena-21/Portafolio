@@ -1,7 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
-
-// import {translateDate, transformDate} from '@utils'
 
 function transformDate(date:string): string {
   return new Date(date).toLocaleDateString('en-us', { year:"numeric", month:"short"})

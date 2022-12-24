@@ -11,13 +11,15 @@ export default function TestPage (props: any) {
     return (
         // <Pepe color="pink">
             <div className="fillHeight"></div>
-        //     <BUTTON color="white">Prueba</BUTTON>
-        //     <BUTTON color="red">Prueba</BUTTON>
-        //     <BUTTON >Prueba</BUTTON>
-        //     <h1>hola!!</h1>
-        //     <p>{props.parseData?.title}</p>
-        //     <p>{props.parseData?.description}</p>
-        // </Pepe>
+    //         <BUTTON color="white">Prueba</BUTTON>
+    //         <BUTTON color="red">Prueba</BUTTON>
+    //         <BUTTON >Prueba</BUTTON>
+            // <h1>hola!!
+
+            //      <p>{props.parseData?.title}</p>
+            // </h1>
+    //         <p>{props.parseData?.description}</p>
+    //     </Pepe>
     )
 }
 

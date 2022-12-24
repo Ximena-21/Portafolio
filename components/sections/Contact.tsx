@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { email } from "@config";
-// import "../../styles/components/sections/contact.scss";
 
 export default function Contact() {
   const revealContainer = useRef(null);

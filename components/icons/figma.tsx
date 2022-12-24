@@ -7,7 +7,7 @@ const IconFigma = () => (
     viewBox="0 0 26 38"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    // strokeLineJoin ="round"
+    strokeLinejoin="round"
     strokeLinecap="round"
   >
     <title>Figma</title>

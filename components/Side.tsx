@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../styles/components/side.scss'
 
 export default function Side({ children, orientation} : any ) {
   return (

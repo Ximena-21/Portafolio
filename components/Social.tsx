@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../styles/components/social.scss'
 import { socialMedia } from '@config';
 import { Side } from '@components/index'
 import { Icon } from '@components/icons';
