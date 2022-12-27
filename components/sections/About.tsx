@@ -29,14 +29,13 @@ export default function About() {
             </p>
 
             <p>
-              Inicie en el mundo de la programación a en el año 2021, apoyando pequeños
-              proyectos enfocados al diseño de páginas web. Esto, despertó mi interés en
-              este nuevo mundo, e inicie mi formación autónoma con diferentes cursos en
-              Platzi y búsqueda en la web. Búsqueda que me llevó a postular y posteriormente
-              a ingresar a Laboratoria, allí cursé el programa intensivo de 6 meses para
-              Front-end Developer, enfocado al desarrollo de habilidades técnicas y
-              socioemocionales, en la simulación de un ambiente laboral basado en el
-              desarrollo de proyectos y trabajo colaborativo.
+              Inicie en el mundo de la programación en el año 2021, apoyando pequeños proyectos
+              enfocados al diseño de páginas web. Esto, despertó mi interés en este nuevo mundo,
+              e inicie mi formación autónoma con diferentes cursos en Platzi y búsqueda en la web. 
+              Búsqueda que me llevó a postular y posteriormente ingresar a Laboratoria, allí cursé
+              el programa intensivo de 6 meses para Frontend Developer, enfocado al desarrollo de
+              habilidades técnicas y socioemocionales, en la simulación de un ambiente laboral basado
+              en el desarrollo de proyectos y trabajo colaborativo.
             </p>
 
             <p>
