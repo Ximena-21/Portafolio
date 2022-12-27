@@ -1,9 +1,10 @@
 ---
 title: BookPod
-description: Diseño y desarrollo de una página web, para la MVP de bookpod de
-  acuerdo a sus necesidades y requerimientos. Una plataforma de servicio de
-  libros digitales bajo la metodologia de suscripcion.
-image: /uploads/bookpod.png
+description: Diseño y desarrollo de una Página Web responsive para la plataforma
+  de servicio de libros digitales bajo la metodología de suscripción Bookpod. Se
+  Implemento la funcionalidad de  validación del número de tarjeta de crédito
+  del cliente al final del proceso de compra del plan.
+image: /uploads/screenshot-from-2022-12-27-18-14-39.png
 github: https://github.com/Ximena-21/Bookpod
 external: https://bookpodd.netlify.app/
 mockup: https://www.figma.com/file/Rqf9q5jEtwQEcv2wGg6kLz/BookPod
