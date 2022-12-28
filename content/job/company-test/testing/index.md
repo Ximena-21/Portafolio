@@ -1,11 +1,9 @@
 ---
 title: Frontend developer
-company: leal
+company: Freelancer
 dateRange:
-  finish: 2022-12-19T02:37:28.738Z
-  init: 2022-12-19T02:37:20.871Z
-url: https://google.com
-activities:
-  - activity: Design prototypes with figma and adode xd
-  - activity: Layout designs for websites and saas
+  finish: 2022-12-28T21:38:23.645Z
+  init: 2022-07-02T02:37:20.871Z
+url: https://ximenanzola.netlify.app
+activities: []
 ---
