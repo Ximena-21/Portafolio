@@ -1,5 +1,5 @@
 ---
-title: Auxiliar Ambiental
+title: Ambiental
 company: INGELYC Proyectos S.A.S
 dateRange:
   finish: 2019-11-15T02:37:28.738Z
