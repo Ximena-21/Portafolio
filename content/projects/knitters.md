@@ -1,6 +1,8 @@
 ---
 title: Knitters
-description: Knitters
+description: Diseño y desarrolla de una app web para la comunidad de tejedores,
+  donde sus usuarios pueden postear sus creaciones e interactuar con cada
+  miembro de la app.
 image: /uploads/knitters.png
 github: https://github.com/Ximena-21/Knitters
 external: https://knitters.netlify.app/
