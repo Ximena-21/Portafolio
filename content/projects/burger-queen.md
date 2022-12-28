@@ -1,6 +1,8 @@
 ---
 title: Burger Queen
-description: Burguer queen
+description: Diseño y desarrollo de la interfaz de un sistema de toma y envío de
+  pedidos a cocina, para la gestión ordenada y eficiente del proceso productivo
+  del Restaurante Burger Queen.
 image: /uploads/burguerqueen.png
 github: https://github.com/Ximena-21/burger-queen-api-client
 external: https://burgerqueen-app.netlify.app/
