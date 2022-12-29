@@ -26,7 +26,8 @@ const Menu = () => {
   }, []);
 
   useEffect(() => {
-    document.body.classList.toggle("blur")
+    if(menuOpen === true) document.body.classList.add("blur")
+    else document.body.classList.remove("blur")
   }, [menuOpen])
 
   return (
