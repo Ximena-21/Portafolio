@@ -10,18 +10,12 @@ import Head from 'next/head'
 
 export default function Home(props: any) {
 
-  console.log("here is my home props >>>>>>>>><", props)
-
-  // const { jobs } = props
-
   const location = { pathName: "home" }
-
-
 
   return (
     <>
       < Head >
-        {/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
+        <title>Paula Anzola Developer</title>
       </Head >
       <Layout location={location}>
         <Hero />
