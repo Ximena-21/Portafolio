@@ -1,13 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { navLinks } from '@config';
-// import { useOnClickOutside } from '@hooks';
-// import { Helmet } from 'react-helmet-async';
-// import {Helmet} from 'react-helmet'
-// import '../styles/components/menu.scss';
 
 const Menu = () => {
-  const wrapperRef = useRef();
+  const wrapperRef = useRef(null);
   const buttonRef = useRef(null);
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,13 +25,12 @@ const Menu = () => {
     };
   }, []);
 
-  return (
-    <div className="styledMenu">
-    {/* <div ref={wrapperRef} className="styledMenu"> */}
+  useEffect(()=>{
+    document.body.classList.toggle("blur")
+  },[menuOpen])
 
-      {/* <Helmet>
-        <body className={`${menuOpen ? 'blur' : ""}`}></body>
-    </Helmet> */}
+  return (
+    <div ref={wrapperRef} className="styledMenu">
 
       <div
         className='hamburguerButton'
