@@ -12,6 +12,6 @@ activities:
       seguimiento para garantizar la preservación de un ambiente saludable.
   - activity: Preste asistencia técnica, y asesoría en la preparación, organización y
       desarrollo de los programas ambientales del Municipio.
-  - activity: Desarrolle acciones para prevencióon, mitigación, control, compensación
+  - activity: Desarrolle acciones para prevención, mitigación, control, compensación
       y corrección, de los efectos negativos sobre el medio ambiente.
 ---
