@@ -7,7 +7,7 @@ const Menu = () => {
   const buttonRef = useRef(null);
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(menuOpen);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 //   useOnClickOutside(wrapperRef, () => setMenuOpen(false))
   // const classNull : any  = null
 
