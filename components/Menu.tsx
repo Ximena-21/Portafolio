@@ -8,10 +8,10 @@ const Menu = () => {
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
-//   useOnClickOutside(wrapperRef, () => setMenuOpen(false))
+  //   useOnClickOutside(wrapperRef, () => setMenuOpen(false))
   // const classNull : any  = null
 
-  const onResize = (e : any) => {
+  const onResize = (e: any) => {
     if (e.currentTarget.innerWidth > 768) {
       setMenuOpen(false);
     }
@@ -25,9 +25,9 @@ const Menu = () => {
     };
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     document.body.classList.toggle("blur")
-  },[menuOpen])
+  }, [menuOpen])
 
   return (
     <div ref={wrapperRef} className="styledMenu">
