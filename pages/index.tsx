@@ -15,7 +15,7 @@ export default function Home(props: any) {
   return (
     <>
       < Head >
-        <title>Paula Anzola Developer</title>
+        <title>Ximena Anzola Developer</title>
       </Head >
       <Layout location={location}>
         <Hero />
