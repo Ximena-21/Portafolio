@@ -8,8 +8,6 @@ const Menu = () => {
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  //   useOnClickOutside(wrapperRef, () => setMenuOpen(false))
-  // const classNull : any  = null
 
   const onResize = (e: any) => {
     if (e.currentTarget.innerWidth > 768) {

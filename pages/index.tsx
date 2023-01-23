@@ -1,12 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Hero, Layout, About, Jobs, Projects, Contact } from '@components/index'
-import { readFileSync, readdirSync } from "fs"
-// import glob from "glob";
-import matter from 'gray-matter'
+import { readdirSync } from "fs"
 import Head from 'next/head'
-// import Head from 'next/head'
-// import Image from 'next/image'
-// import Layout from '../components/Layout'
 
 export default function Home(props: any) {
 

@@ -1,9 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 
 function transformDate(date:string): string {
-  return new Date(date).toLocaleDateString('en-us', { year:"numeric", month:"short"})
+  return date === "" ? 'Actualidad': new Date(date).toLocaleDateString('en-us', { year:"numeric", month:"short"})
 }
-
 
 export default function Jobs({ data }: any) {
   const revealContainer = useRef(null);
@@ -52,8 +51,8 @@ export default function Jobs({ data }: any) {
                 </span>
               </h3>
 
-              <p className="range">{transformDate(activatedJob.dateRange.init)} - {transformDate(activatedJob.dateRange.finish) ? (transformDate(activatedJob.dateRange.finish)) : 'actualidad'}</p>
-
+              <p className="range">{transformDate(activatedJob.dateRange.init)} - {transformDate(activatedJob.dateRange.finish)}</p> {/* ? (transformDate(activatedJob.dateRange.finish)) : 'actualidad' */}
+       
               <div className='activities'>
                 <ul>
                   {activatedJob.activities &&
