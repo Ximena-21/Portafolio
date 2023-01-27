@@ -1,7 +1,8 @@
 ---
 title: Portafolio PXAA
-description: Diseño y desarrollo de una pagina web, como herramienta para presentar de forma optima, 
-    ordenada y visualmente amigable la informacion acerca de mi perfil profesional.
+description: Diseño y desarrollo de una pagina web, como herramienta para
+  presentar de forma optima, ordenada y visualmente amigable la informacion
+  acerca de mi perfil profesional.
 image: /uploads/portafolio.png
 github: https://github.com/Ximena-21/Portafolio
 external: https://ximenanzola.netlify.app
@@ -11,4 +12,5 @@ tecnologies:
   - TypeScript
   - NextJs
   - Figma
+  - Netlify CMS
 ---
