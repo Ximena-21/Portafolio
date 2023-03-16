@@ -16,9 +16,9 @@ export default function Home(props: any) {
         <title>Ximena Anzola Developer</title>
       </Head >
       <Layout location={location}>
-        <h1>{route.asPath}</h1>
         <Hero />
         <About />
+        <h1>{route.asPath}</h1>
         <Jobs data={props.jobs || []} />
         <Projects data={props.projects || []} />
         <Contact />
