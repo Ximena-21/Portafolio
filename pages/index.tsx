@@ -18,7 +18,6 @@ export default function Home(props: any) {
       <Layout location={location}>
         <Hero />
         <About />
-        <h1>{route.pathname}</h1>
         <Jobs data={props.jobs || []} />
         <Projects data={props.projects || []} />
         <Contact />
