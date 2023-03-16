@@ -2,8 +2,11 @@
 import { Hero, Layout, About, Jobs, Projects, Contact } from '@components/index'
 import { readdirSync } from "fs"
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function Home(props: any) {
+
+  const route = useRouter()
 
   const location = { pathName: "home" }
 
@@ -13,6 +16,7 @@ export default function Home(props: any) {
         <title>Ximena Anzola Developer</title>
       </Head >
       <Layout location={location}>
+        <h1>{route.asPath}</h1>
         <Hero />
         <About />
         <Jobs data={props.jobs || []} />
